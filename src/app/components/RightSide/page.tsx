@@ -37,9 +37,9 @@ const RightSide = () => {
 
   return (
     <div className="lg:col-span-2 h-screen overflow-y-auto sticky top-0 block">
-      <div className="fixed z-[999] bottom-0 right-1">
+      {/* <div className="fixed z-[999] bottom-0 right-1">
         <Chat />
-      </div>
+      </div> */}
       {/*right menu*/}
       <div className="rounded-lg bg-gray-700 overflow-hidden shadow-lg ms-4 my-4">
         <div className="flex">

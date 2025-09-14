@@ -28,6 +28,11 @@ const Navbar = () => {
       icon: <FaHome />,
     },
     {
+      path: `/user-profile/${user?.userId}`,
+      title: "Profile",
+      icon: <FaUserCheck />,
+    },
+    {
       path: "/explore",
       title: "Explore",
       icon: <FaHashtag />,
@@ -51,11 +56,6 @@ const Navbar = () => {
       path: "/friends",
       title: "Friends",
       icon: <FaUserFriends />,
-    },
-    {
-      path: `/user-profile/${user?.userId}`,
-      title: "Profile",
-      icon: <FaUserCheck />,
     },
     isAdmin && {
       path: "/posts",
