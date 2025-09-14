@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
-import Lottie from "lottie-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import loginLottie from "../../../../public/images/animation_llpcwk02.json";
@@ -10,6 +9,8 @@ import { toast } from "sonner";
 import { TUser, setUser } from "@/redux/features/auth/authSlice";
 import { verifyToken } from "@/utils/verifyToken";
 import { useAppDispatch } from "@/redux/hooks";
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const LoginPage = () => {
   const [login] = useLoginMutation();

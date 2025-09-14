@@ -1,11 +1,12 @@
 "use client";
-import Lottie from "lottie-react";
 import Link from "next/link";
 import { FieldValues, useForm } from "react-hook-form";
 import registerLottie from "../../../../public/images/animation_llpei2ae.json";
 import { toast } from "sonner";
 import { useRegisterMutation } from "@/redux/features/register/registerApi";
 import { useRouter } from "next/navigation";
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const Register = () => {
   const [registerUser] = useRegisterMutation();
