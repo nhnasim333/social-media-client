@@ -6,6 +6,7 @@ interface Message {
   sender: "sender" | "receiver";
 }
 
+// This feature is under development
 const Chat: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([
     { text: "Hello!", sender: "receiver" },
